@@ -49,12 +49,12 @@ const App = () => {
             <Menu.Item key="5">Music</Menu.Item>
             <Menu.Item key="6">League of Legends</Menu.Item>
             <Menu.Item key="7">Movies</Menu.Item>
-            <Menu.Item key="8">Settings</Menu.Item>
-            <Menu.Item key="8">Report</Menu.Item>
-            <Menu.Item key="8">History</Menu.Item>
-            <Menu.Item key="8">Help</Menu.Item>
-            <Menu.Item key="8">Send feedback</Menu.Item>
-            <Menu.Item key="8">Live</Menu.Item>
+            <Menu.Item key="9">Settings</Menu.Item>
+            <Menu.Item key="10">Report</Menu.Item>
+            <Menu.Item key="11">History</Menu.Item>
+            <Menu.Item key="12">Help</Menu.Item>
+            <Menu.Item key="13">Send feedback</Menu.Item>
+            <Menu.Item key="14">Live</Menu.Item>
           </Menu>
         </Sider>
         <Layout className="site-layout" style={{ marginLeft: 200 }}>
