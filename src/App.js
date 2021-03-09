@@ -7,6 +7,7 @@ import {
 } from "@ant-design/icons";
 import "./App.scss";
 import logo from "./images/youtube.png";
+import something from "./images/something.JPG";
 import Contents from "./components/homepage/Contents";
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -64,21 +65,8 @@ const App = () => {
               className="site-layout-background"
               style={{ padding: 24, textAlign: "center" }}
             >
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
-              <Contents />
+              <Contents name="The Chainsmockers & Coldplay - Somthing just like this (Lyric)" src={something}/>
+      
             </div>
           </Content>
           <Footer style={{ textAlign: "center" }}>

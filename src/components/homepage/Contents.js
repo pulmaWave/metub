@@ -1,14 +1,17 @@
-import React from 'react'
-import "./Contents.scss"
+import React from "react";
+import "./Contents.scss";
 
-const Contents = () => {
+const Contents = (props) => {
   return (
-    <div>   
+    <div>
       <div className="view">
-
+            <img src={props.src}/>
       </div>
+      <div className="titlevideo">
+                  <p>{props.name}</p>
+            </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contents
+export default Contents;
