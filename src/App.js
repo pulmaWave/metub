@@ -1,5 +1,8 @@
+import {React,useState} from 'react'
 import { Layout, Menu } from "antd";
 import {
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
   HomeOutlined,
   UploadOutlined,
   VideoCameraOutlined,
@@ -13,6 +16,10 @@ import Contents from "./components/homepage/Contents";
 const { Header, Content, Footer, Sider } = Layout;
 
 const App = () => {
+ const [collapsed,setCollapse] = useState(false);
+ const toggle=()=>{
+  setCollapse(!collapsed)
+ }
   return (
     <div>
       <Layout>
@@ -24,7 +31,7 @@ const App = () => {
             </Menu.Item>
           </Menu>
         </Header>
-        <Sider
+        <Sider trigger={null} collapsible collapsed={setCollapse}
           style={{
             paddingTop: "60px",
             overflow: "auto",
@@ -33,7 +40,12 @@ const App = () => {
             left: 0,
           }}
         >
-          <div className="logo" />
+          <div className="logo">
+          {/* {(setCollapse ? MenuUnfoldOutlined : MenuFoldOutlined, {
+              className: 'trigger',
+              onClick: toggle(),
+            })} */}
+          </div>
           <Menu theme="light" mode="inline" defaultSelectedKeys={["4"]}>
             <Menu.Item key="1" icon={<HomeOutlined />}>
               Home
@@ -74,7 +86,6 @@ const App = () => {
           </Footer>
         </Layout>
       </Layout>
-      ,
     </div>
   );
 };
