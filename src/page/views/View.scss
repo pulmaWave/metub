@@ -1,0 +1,15 @@
+
+
+.view {
+      width: 900px;
+      height: 500px;
+      margin: 10px;
+      background-color: rgb(199, 199, 199);
+      display: flex;
+    
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }

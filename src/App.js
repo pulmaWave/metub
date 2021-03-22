@@ -1,12 +1,9 @@
 import React from "react";
-
-import Home from "./components/homepage/Home";
+import Home from './page/homepage/Home';
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+            <Home />
   );
 }
 
