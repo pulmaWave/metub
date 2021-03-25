@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Video = (props) => {
   return (
-    <div>
+    <div className="container-video">
       <div className="video">
           <Link to="/video">
             <img src={props.src} alt="videothumbnail" />

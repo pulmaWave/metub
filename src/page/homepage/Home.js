@@ -12,6 +12,7 @@ import {
   BarChartOutlined,
 } from "@ant-design/icons";
 import "./Home.scss";
+import MeoThumbnail from "../../assets/videos/MeoThumbnail.PNG";
 import picture2 from "../../assets/images/somepic.jpg";
 import logo from "../../assets/images/youtube.png";
 import Video from "../../components/videos/Video";
@@ -34,13 +35,18 @@ const Home = () => {
                 onClick={() => toggle()}
               ></Menu.Item>
               <Menu.Item key="2">
-                <img src={logo} alt="logo" onClick={() => toggle()}></img>
-                Youtube advanced
+                <img src={logo} alt="logo"></img>
+                <a
+                  href="https://www.youtube.com/"
+                  target="blank"
+                  rel="referrer"
+                >
+                  Youtube advanced
+                </a>
               </Menu.Item>
             </Menu>
           </Header>
           <Sider
-          
             trigger={null}
             collapsible
             collapsed={collapsed}
@@ -95,14 +101,46 @@ const Home = () => {
                 <Switch>
                   <Route path="/" exact="true">
                     <Video
-                      name="The Chainsmockers & Coldplay - Somthing just like this (Lyric)"
-                      src={picture2}
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
+                    />
+                    <Video
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
                     />
                   </Route>
                   <Route path="/home" exact="true">
                     <Video
-                      name="The Chainsmockers & Coldplay - Somthing just like this (Lyric)"
-                      src={picture2}
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
+                    />
+                    <Video
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
+                    />
+                    <Video
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
+                    />
+                    <Video
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
+                    />
+                    <Video
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
+                    />
+                    <Video
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
+                    />
+                    <Video
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
+                    />
+                    <Video
+                      name="The cat was surprised by its owner"
+                      src={MeoThumbnail}
                     />
                   </Route>
                   <Route path="/video" exact="true">
