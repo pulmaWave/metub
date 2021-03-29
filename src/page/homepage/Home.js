@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import View from "../views/View";
 import { Layout, Menu } from "antd";
 import {
-  MenuUnfoldOutlined,
+  // MenuUnfoldOutlined,
   MenuFoldOutlined,
   HomeOutlined,
   UploadOutlined,
@@ -13,7 +13,9 @@ import {
 } from "@ant-design/icons";
 import "./Home.scss";
 import MeoThumbnail from "../../assets/videos/MeoThumbnail.PNG";
-import picture2 from "../../assets/images/somepic.jpg";
+import memepic1 from "../../assets/videos/memepic1.PNG";
+import catVideo2 from "../../assets/videos/Meo.mp4";
+import meme1 from "../../assets/videos/meme.mp4";
 import logo from "../../assets/images/youtube.png";
 import Video from "../../components/videos/Video";
 const { Header, Content, Footer, Sider } = Layout;
@@ -101,50 +103,37 @@ const Home = () => {
                 <Switch>
                   <Route path="/" exact="true">
                     <Video
+                    path="/video1"
                       name="The cat was surprised by its owner"
                       src={MeoThumbnail}
                     />
                     <Video
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
+                    path="/video2"
+                      name="This meme made my day"
+                      src={memepic1}
                     />
                   </Route>
                   <Route path="/home" exact="true">
                     <Video
+                    path="/video1"
                       name="The cat was surprised by its owner"
                       src={MeoThumbnail}
                     />
+
                     <Video
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
-                    />
-                    <Video
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
-                    />
-                    <Video
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
-                    />
-                    <Video
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
-                    />
-                    <Video
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
-                    />
-                    <Video
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
-                    />
-                    <Video
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
+                    path="/video2"
+                      name="This meme made my day"
+                      src={memepic1}
                     />
                   </Route>
                   <Route path="/video" exact="true">
-                    <View />
+                    <View src={catVideo2} />
+                  </Route>
+                  <Route path="/video1" exact="true">
+                    <View src={catVideo2} />
+                  </Route>
+                  <Route path="/video2" exact="true">
+                    <View src={meme1} />
                   </Route>
                 </Switch>
               </div>
