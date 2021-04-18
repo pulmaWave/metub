@@ -1,4 +1,4 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 
 #components-layout-demo-fixed-sider .logo {
   height: 32px;
@@ -6,8 +6,10 @@
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 .site-layout .site-layout-background {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);  display: flex;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  display: flex;
   flex-wrap: wrap;
+  justify-content:space-between;
 }
 
 #components-layout-demo-custom-trigger .trigger {
@@ -17,5 +19,3 @@
   cursor: pointer;
   transition: color 0.3s;
 }
-
-

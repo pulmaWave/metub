@@ -7,11 +7,14 @@ const Video = (props) => {
     <div className="container-video">
       <div className="video">
         <Link to={props.path}>
-          <img src={props.src} alt="videothumbnail" />
+          <img src={props.src} alt="img" />
         </Link>
       </div>
-      <div className="titlevideo">
+      <div className="title">
         <p>{props.name}</p>
+      </div>
+      <div className="author">
+        <p className="author">{props.author}</p>
       </div>
     </div>
   );

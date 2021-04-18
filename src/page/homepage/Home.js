@@ -65,23 +65,17 @@ const Home = () => {
                 <Link to="/home">Home</Link>
               </Menu.Item>
               <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-                Trending
+                <Link to="/cat">Cat</Link>
               </Menu.Item>
               <Menu.Item key="3" icon={<UploadOutlined />}>
-                Subscriptions
+                <Link to="/meme">Meme</Link>
               </Menu.Item>
               <Menu.Item key="4" icon={<BarChartOutlined />}>
-                Gaming
+                <Link to="/fact">Fact</Link>
               </Menu.Item>
-              <Menu.Item key="5">Music</Menu.Item>
-              <Menu.Item key="6">League of Legends</Menu.Item>
-              <Menu.Item key="7">Movies</Menu.Item>
-              <Menu.Item key="9">Settings</Menu.Item>
-              <Menu.Item key="10">Report</Menu.Item>
-              <Menu.Item key="11">History</Menu.Item>
-              <Menu.Item key="12">Help</Menu.Item>
-              <Menu.Item key="13">Send feedback</Menu.Item>
-              <Menu.Item key="14">Live</Menu.Item>
+              <Menu.Item key="5" icon={<BarChartOutlined />}>
+                <Link to="/english">English</Link>
+              </Menu.Item>
             </Menu>
           </Sider>
           <Layout className="site-layout" style={{ marginLeft: 200 }}>
@@ -94,49 +88,88 @@ const Home = () => {
                 minHeight: 280,
               }}
             >
-              <div
-                className="site-layout-background"
-                style={{ padding: 24, textAlign: "center" }}
-              >
-                {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
-                <Switch>
-                  <Route path="/" exact="true">
-                    <Video
+              <Switch>
+                <Route path="/" exact="true">
+                  <Video
                     path="/video1"
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
-                    />
-                    <Video
+                    name="The cat was surprised by its owner"
+                    author="Bryan"
+                    src={MeoThumbnail}
+                  />
+                  <Video
                     path="/video2"
-                      name="This meme made my day"
-                      src={memepic1}
-                    />
-                  </Route>
-                  <Route path="/home" exact="true">
-                    <Video
+                    name="This meme made my day"
+                    author="Bryan"
+                    src={memepic1}
+                  />
+                  <Video
+                    path="/video2"
+                    name="This meme made my day"
+                    author="Bryan"
+                    src={memepic1}
+                  />
+                  <Video
+                    path="/video2"
+                    name="This meme made my day"
+                    author="Bryan"
+                    src={memepic1}
+                  />
+                </Route>
+                <Route path="/home" exact="true">
+                  <Video
                     path="/video1"
-                      name="The cat was surprised by its owner"
-                      src={MeoThumbnail}
-                    />
+                    name="The cat was surprised by its owner"
+                    author="Bryan"
+                    src={MeoThumbnail}
+                  />
 
-                    <Video
+                  <Video
                     path="/video2"
-                      name="This meme made my day"
-                      src={memepic1}
-                    />
-                  </Route>
-                  <Route path="/video" exact="true">
-                    <View src={catVideo2} />
-                  </Route>
-                  <Route path="/video1" exact="true">
-                    <View src={catVideo2} />
-                  </Route>
-                  <Route path="/video2" exact="true">
-                    <View src={meme1} />
-                  </Route>
-                </Switch>
-              </div>
+                    name="This meme made my day"
+                    author="Bryan"
+                    src={memepic1}
+                  />
+                  <Video
+                    path="/video2"
+                    name="This meme made my day"
+                    author="Bryan"
+                    src={memepic1}
+                  />
+                  <Video
+                    path="/video2"
+                    name="This meme made my day"
+                    author="Bryan"
+                    src={memepic1}
+                  />
+                </Route>
+                <Route path="/cat" exact="true">
+                  <Video
+                    path="/video1"
+                    name="The cat was surprised by its owner"
+                    author="Bryan"
+                    src={MeoThumbnail}
+                  />
+                </Route>
+                <Route path="/meme">
+                  <Video
+                    path="/video2"
+                    name="This meme made my day"
+                    author="Bryan"
+                    src={memepic1}
+                  />
+                </Route>
+                <Route path="/fact" exact="true"></Route>
+                <Route path="/english" exact="true"></Route>
+                <Route path="/video" exact="true">
+                  <View src={catVideo2} />
+                </Route>
+                <Route path="/video1" exact="true">
+                  <View src={catVideo2} />
+                </Route>
+                <Route path="/video2" exact="true">
+                  <View src={meme1} />
+                </Route>
+              </Switch>
             </Content>
             <Footer style={{ textAlign: "center" }}>
               Ant Design ©2018 Created by Bryan
